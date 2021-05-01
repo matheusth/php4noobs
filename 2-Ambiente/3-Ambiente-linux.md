@@ -6,11 +6,17 @@ Vamos instalar o PHP com alguns módulos para ajudar no desenvolvimento posterio
 
 Pra instalar tudo de uma vez, basta rodar o comando abaixo:
 
+- Debian, Ubuntu e distribuições derivadas
 ```bash
 sudo apt install php php-mysql php-zip php-curl
 ```
+- Arch Linux, Manjaro e distribuições derivadas:
+```bash
+pacman -S php
+```
+após a instalação no arquivo `/etc/php/php.ini` mude a linha `;extension=mysqli` para `extension=mysqli`: 
 
-Caso sua distribuição não seja baseada no Debian (apt) você deve usar o gerenciador de pacotes apropriado para a sua distribuição (yum, pacman, zypper, ...).
+Caso sua distribuição não seja baseada no Debian (apt) ou no Arch Linux (pacman) você deve usar o gerenciador de pacotes apropriado para a sua distribuição (yum, pacman, zypper, ...).
 
 Após finalizar com sucesso a instalação do PHP e dos módulos, você pode conferir a versão instalada rodando o comando abaixo:
 
